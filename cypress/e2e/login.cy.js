@@ -25,7 +25,7 @@ describe('Test', () => {
         cy.get('.modal-footer').children('.btn.btn-success').click();
       });
     });
-    cy.wait(4000);
+    cy.wait(5000);
     cy.get('.btn.btn-success.ps-4').click();
   });
 });
