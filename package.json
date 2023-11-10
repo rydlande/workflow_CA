@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Test",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "npm run test-unit && npm run test-e2e-cli",
     "test-unit": "jest",
