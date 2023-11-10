@@ -10,7 +10,7 @@ on:
   workflow_dispatch:
 
 env:
-  MEANING_OF_LIFE: ${{secrets.MEANING_OF_LIFE}}    
+  MEANING_OF_LIFE: ${{secrets}}    
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
