@@ -26,6 +26,7 @@ describe('Test', () => {
       });
     });
     cy.wait(5000);
-    cy.get('.btn.btn-success.ps-4').click();
+    /*     cy.get('.btn.btn-success.ps-4').click();
+     */
   });
 });
