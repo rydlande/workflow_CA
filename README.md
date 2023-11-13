@@ -9,12 +9,12 @@
 ### Installing
 
 Clone the repo:
-`git clone https://github.com/rydlande/workflow_CA.git`
+```git clone https://github.com/rydlande/workflow_CA.git```
 
 Install the dependencies:
-`npm install`
+```npm install```
 
 ### Running
 
 Run the following command:
-`npm run start`
+```npm run start```
