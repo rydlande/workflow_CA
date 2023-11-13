@@ -22,17 +22,8 @@ jobs:
         with:
           node-version: 20
 
-      - name: Write cypress.env.json file
-        run: |
-          echo '${{secrets.CYPRESS_EMAIL}}' > cypress.env.json
-
       - name: Test Build End-To-End Tests
         run: npm run test-e2e-cli
         env:
           CYPRESS_EMAIL: ${{secrets.CYPRESS_EMAIL}}
           CYPRESS_PASSWORD: ${{secrets.CYPRESS_PASSWORD}}
-
-      - name: run cypress tests with electron
-        uses: cypress-io/github-action@v4
-        with:
-          browser: electron
