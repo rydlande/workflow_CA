@@ -18,10 +18,6 @@ const localStorageMock = {
 global.localStorage = localStorageMock;
 
 describe('login function', () => {
-  /* afterEach(() => {
-    jest.clearAllMocks();
-  }); */
-
   it('should store token in browser storage', async () => {
     const email = 'test@example.com';
     const password = 'password';
