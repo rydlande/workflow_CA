@@ -25,5 +25,5 @@ jobs:
       - name: Test Build End-To-End Tests
         run: npm run test-e2e-cli
         env:
-          CYPRESS_EMAIL: ${{secrets.CYPRESS_EMAIL}}
-          CYPRESS_PASSWORD: ${{secrets.CYPRESS_PASSWORD}}
+          CYPRESS_EMAIL: ${{secrets.EMAIL}}
+          CYPRESS_PASSWORD: ${{secrets.PASSWORD}}
