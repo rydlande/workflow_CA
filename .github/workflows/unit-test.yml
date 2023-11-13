@@ -28,6 +28,3 @@ jobs:
 
       - name: Test Build Unit Tests
         run: npm run test-unit
-        env:
-          CYPRESS_EMAIL: ${{secrets.CYPRESS_EMAIL}}
-          CYPRESS_PASSWORD: ${{secrets.CYPRESS_PASSWORD}}
