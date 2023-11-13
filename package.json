@@ -1,7 +1,7 @@
 {
   "name": "workflow_ca",
   "version": "1.0.0",
-  "description": "Test",
+  "description": "CA in Workflow",
   "main": "index.js",
   "type": "module",
   "scripts": {
@@ -17,7 +17,7 @@
     "prepare": "husky install"
   },
   "keywords": [],
-  "author": "Noroff",
+  "author": "Noroff & Eirin Rydland",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.19.3",

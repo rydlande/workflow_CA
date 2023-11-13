@@ -1,5 +1,5 @@
 name: Automated Unit Testing
-on: 
+on:
   pull_request:
   workflow_dispatch:
 
@@ -12,13 +12,22 @@ jobs:
       - name: Checkout under $GITHUB_WORKSPACE
         uses: actions/checkout@main
 
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Build SASS
+        run: npm run build
+
       - name: Set up NodeJS
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v3
         with:
           node-version: 20
 
       - name: Install all dependencies
         run: npm install
 
-      - name: Run Tests
+      - name: Test Build Unit Tests
         run: npm run test-unit
+        env:
+          CYPRESS_EMAIL: ${{secrets.CYPRESS_EMAIL}}
+          CYPRESS_PASSWORD: ${{secrets.CYPRESS_PASSWORD}}

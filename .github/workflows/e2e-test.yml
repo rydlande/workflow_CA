@@ -18,13 +18,15 @@ jobs:
         run: npm run build
 
       - name: Set up NodeJS
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v3
         with:
           node-version: 20
+
       - name: run cypress tests with electron
         uses: cypress-io/github-action@v4
         with:
           browser: electron
+
       - name: Test Build End-To-End Tests
         run: npm run test-e2e-cli
         env:
