@@ -10,7 +10,8 @@ on:
   workflow_dispatch:
 
 env:
-  MEANING_OF_LIFE: ${{secrets}}
+  CYPRESS_EMAIL: ${{secrets.CYPRESS_EMAIL}}
+  CYPRESS_PASSWORD: ${{secrets.CYPRESS_PASSWORD}}
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
