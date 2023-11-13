@@ -3,3 +3,5 @@
 .env
 .eslintcache
 cypress.env.json
+/tests(with-comments)
+/src/test/tests(with-comments)
