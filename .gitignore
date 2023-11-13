@@ -3,5 +3,9 @@
 .env
 .eslintcache
 cypress.env.json
-/jest/tests(with-comments)
 /jest
+jest
+/notes
+cypress.env.json
+.cypress.env.json
+/cypress.env.json
