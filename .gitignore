@@ -1,11 +1,5 @@
 /node_modules
 /dist
 .env
-.eslintcache
 cypress.env.json
-/jest
-jest
 /notes
-cypress.env.json
-.cypress.env.json
-/cypress.env.json
