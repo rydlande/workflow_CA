@@ -24,7 +24,7 @@ jobs:
 
       - name: Write cypress.env.json file
         run: |
-          echo '${{secrets.CYPRESS_EMAIL}} && ${{secrets.CYPRESS_PASSWORD}}' > cypress.env.json
+          echo '${{secrets.CYPRESS_EMAIL}}' > cypress.env.json
 
       - name: Test Build End-To-End Tests
         run: npm run test-e2e-cli
@@ -35,4 +35,4 @@ jobs:
       - name: run cypress tests with electron
         uses: cypress-io/github-action@v4
         with:
-          browser: electron    
+          browser: electron
