@@ -45,17 +45,5 @@
   "bugs": {
     "url": "https://github.com/rydlande/workflow_CA/issues"
   },
-  "homepage": "https://github.com/rydlande/workflow_CA#readme",
-  "lint-staged": {
-    "src/*.js": [
-      "prettier --write",
-      "eslint --fix"
-    ],
-    "*.html": [
-      "prettier --write"
-    ],
-    "*.scss": [
-      "prettier --write"
-    ]
-  }
+  "homepage": "https://github.com/rydlande/workflow_CA#readme"
 }
