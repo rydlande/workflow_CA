@@ -22,6 +22,10 @@ jobs:
         with:
           node-version: 20
 
+      - name: Write cypress.env.json file
+        run: |
+          echo '${{secrets.CYPRESS_EMAIL}} && ${{secrets.CYPRESS_PASSWORD}}' > cypress.env.json
+
       - name: run cypress tests with electron
         uses: cypress-io/github-action@v4
         with:
