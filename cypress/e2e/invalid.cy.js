@@ -16,8 +16,8 @@ describe('User cannot submit the login form with invalid credentials and is show
     });
     cy.wait(500);
     cy.get('div#loginModal').within(() => {
-      cy.get('input[type="email"]').type('invalid');
-      cy.get('input[type="password"]').type(Cypress.env('USER_PASSWORD'));
+      cy.get('input[type="email"]').type(Cypress.env('EMAIL'));
+      cy.get('input[type="password"]').type(Cypress.env('PASSWORD'));
     });
 
     cy.get('div#loginModal', { setTimeout: 1000 }).within(() => {
