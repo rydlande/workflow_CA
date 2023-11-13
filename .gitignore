@@ -7,3 +7,5 @@ cypress.env.json
 jest
 /notes
 cypress.env.json
+.cypress.env.json
+/cypress.env.json
